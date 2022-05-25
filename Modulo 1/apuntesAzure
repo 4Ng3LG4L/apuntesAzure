@@ -1,0 +1,62 @@
+¿Que es azure?
+Azure es una plataforma de informática en la nube con un conjunto de servicios que se amplia continuamente para ayudar a crear
+soluciones que satisfagan los objetivos empresariales.
+
+Otra definición que se le puede dar es que azure es un conjunto de servicios en la nube que Almacena, procesa y transfiere información
+Azure puede soportar:
+- Infraestructura (IAAS)
+- Plataforma (PAAS)
+- Servicio de informática (SAAS)
+
+Informatica en la nube
+Es la entrega de servicios informáticos a través de internet. lo que se conoce como la nube
+los servicios que pueden incluir son:
+- Almacenamiento
+- Bases de datos
+- Redes
+- Software
+- Análisis e inteligencia
+
+Las ventajas de utilizar la nube pueden ser:
+- Reducir los costos operativos
+- Ejecutar la infraestructura de forma más eficaz
+- Escalar a medida que lo necesites
+
+¿Que es Azure portal?
+Es una consola unificada basada en web que proporciona una alternativa a las herramientas de línea de comandos
+(Es la interfaz grafica de azure)
+
+¿Que es azure marketplace?
+Facilita la conexión entre los usuarios y los parnters de microsoft, proveedores de software independientes y nuevas empresas que
+ofrecen sus soluciones y servicios 
+(Tienda de azure donde puede obtener diferentes herramientas para tus necesidades que provienen de diferentes fuentes)
+
+Azure tiene diferentes categorias y servicios que puede proveer los cuales son:
+- Compute (computo): Este servicio es utilizado para cubrir las necesidades que se tengan y pagar solo por lo que utilices, 
+                     ayuda a crear maquinas virtuales o escalar tus servicios para tus aplicaciones web o mobiles
+
+- Networking (redes): Esta caracteristica te ayuda a conectar la nube con tu infraestructura local para llevar la mejor 
+                      experiencia a tus clientes, puedes crear VPN'S o balanceadores de categorias
+
+- Storage (almacenamiento): Este servicio ayuda a almacenar archivos, data o información con la escalabilidad que necesitas segun el caso
+
+- Mobile (movil): Con este servicio puedes construir y hacer deploy de tus aplicaciones moviles ya sean hibridas o nativas
+
+- Databases (bases de datos): Con esta caracteristica azure nos permitira elegir motores de bases de datos segun se ajuste a nuestras
+                             necesidades 
+
+- Web: Esta caracteristica al igual que el servicio de mobile nos permitira desplegar, construir, manejar o escalar
+       nuestras aplicaciones web, APIS, etc.
+
+- Internet of Things (IoT internet de las cosas): Puedes utilizar esta caracteristica para monitorear y manejar todos tus gadgets que puedan 
+                                                   conectarse en la nube
+
+- Big data: Cuando se tiene una cantidad enorme de datos esta caracteristica nos permite crear clusters y correr ayudas para su analisis 
+            de dicha información
+
+- AI (inteligencia artificial): Con este servicio puedes usar machine learning para construir, entrenar y desplegar modelos en la nube
+
+- DevOps: Ayuda para manejar y automatizar de mejor manera los procesos de integracion continua, con el puedes crear, construir
+          y liberar pipelines para poder liberar y desplegar tus aplicaciones
+
+          
