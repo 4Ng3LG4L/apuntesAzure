@@ -1,0 +1,151 @@
+Tipos de modelos en la nube
+
+Hay tres modelos de implementación para la informática en la nube:
+
+- Nube pública: Los servicios de ofrecen a través de la red de internet pública y esta disponible para cualquiera que quiera comprarlos
+                los recursos que posee son propiedad de un proveedor de servicios en la nube de terceros que los distribuye por interner
+                 * No hay gastos de capital para escalar verticalmente
+                 * Las aplicaciones pueden aprovisionarse y desaprovisionarse rápidamente
+                 * Las organizaciones solo pagan por lo que usan.
+
+- Nube privada: Consta de recursos informáticos que determinados usuarios de una empresa u organización usan en exclusiva
+                puede estar ubicada fisicamente en el centro de datos local (dentro de la empresa) o estar hospedadaa por un 
+                proveedor de servicios de terceros
+                 * Debe adquirirse hardware para el inicio y el mantenimiento.
+                 * Las organizaciones tienen un control total de los recursos y la seguridad.
+                 * Las organizaciones son responsables del mantenimiento y las actualizaciones del hardware.
+
+- Nube Hibrida: Es un entorno informático que combina una nube publica y una privada, lo que permite compartir datos entre si
+                 * Proporciona la máxima flexibilidad.
+                 * Las organizaciones determinan dónde se van a ejecutar sus aplicaciones.
+                 * Las organizaciones controlan la seguridad, el cumplimiento o los requisitos legales.
+
+Ventajas de la nube
+
+- Alta disponibilidad: Las aplicaciones basadas en la nube pueden proporcionar una experiencia de usuario continua sin tiempo de 
+                       inactividad perceptible, aunque haya fallos
+
+- Escalabilidad: Las aplicaciones en la nube se pueden escalar verticalmente y horizontalmente.
+                  * Verticalmente: Se escala verticalemente para aumentar la capacidad de procesamiento mediante la incorporación de
+                                   RAM o CPU adicionales a una maquina virtual
+
+                  * horizontalmente: aumenta la capacidad de proceso mediante la adición de instancias de recursos,
+                                      como la incorporación de máquinas virtuales a la configuración.
+
+- Elasticidad: Se pueden configurar las aplicaciones en la nube para aprovechar el escalado automático, de esta forma
+               las aplicaciones simpre dispondrán de los recursos que necesitan 
+
+- Agilidad: Se puede implementar y configurar rapidamente los recursos basados en la nube a medida que cambian
+            los requisitos de la aplicación
+
+- Distribución geografica: Se refiere a la implementación de aplicaciones y datos en centros de datos regionales, lo que 
+                           garantiza que sus clientes siempre tendrám el mejor rendimiento segun su región
+
+- Recuperacion ante desastres: Podrá implementar las aplicaciones con la seguridad de saber que los datos están 
+                               protegidos en caso de que se produzca un desastre.
+
+Gastos
+Hay dos tipos diferentes de gastos que se deben tener en cuenta:
+
+- Gatos de capital (CapEx): Hacen referencia a la inversión previa de dinero en infraestructura física, 
+                            que se podrá deducir a lo largo del tiempo. El costo previo de CapEx tiene un valor que disminuye con el tiempo.
+
+- Gastos operativos (OpEx): Es dinero que se invierte en servicios o productos y se facturan al instante, se puede deducir el mismo año que se produce. 
+                            No hay ningún costo previo, ya que se paga por un servicio o producto a medida que se usa 
+
+Los servicios en la nube se clasifican como OpEx debido a su modelo de consumo.
+
+En resumen, CapEx requiere unos costos financieros previos considerables, 
+así como unos gastos continuos de mantenimiento y soporte técnico. En cambio, 
+OpEx es un modelo basado en el consumo
+
+Las venatajas de los modelos basados en el consumo son:
+- Sin costes por adelantado
+- No es necesario comprar ni administrar infraestructuras costosas que es posible que los usuarios no aprovechen del todo.
+- Se puede pagar para obtener recursos adicionales cuando se necesiten.
+- Se puede dejar de pagar por los recursos que ya no se necesiten.
+
+Descripción de los distintos servicios de la nube
+Estos modelos definen los diferentes niveles de responsabilidad compartida de un proveedor de nube y un inquilino de nube.
+Modelos.
+
+- IaaS (Infraestructura como servicio): Este modelo de servicio en la nube es el más similar a la administración de servidores físicos;
+                                        un proveedor de servicios en la nube mantendrá actualizado el hardware, pero el mantenimiento del 
+                                        sistema operativo y la configuración de red serán su responsabilidad como inquilino de nube.
+                                        Una ventaja de este modelo de servicio en la nube es la rápida implementación de nuevos dispositivos de proceso.
+
+                                        IaaS es la categoría más flexible de servicios en la nube. Su objetivo es ofrecer un control completo 
+                                        sobre el hardware que ejecuta la aplicación. En vez de comprar hardware, con IaaS, se alquila.
+
+                                        VENTAJAS:
+                                         * Sin gastos de capital (CapEx): Los usuarios no tienen costos iniciales.
+                                         * Agilidad: Se pueden configurar las aplicaciones con rapidez para que sean accesibles y desaprovisionarlas cuando sea necesario.
+                                         * Administración: Se aplica el modelo de responsabilidad compartida; el usuario administra y mantiene los servicios que ha aprovisionado, 
+                                                           y el proveedor de nube administra y mantiene la infraestructura en la nube.
+                                         * Modelo basado en el consumo: Las organizaciones solo pagan por lo que usan y operan en un modelo de gastos operativos (OpEx).
+                                         * Aptitudes: No se requieren conocimientos técnicos avanzados para implementar y usar una nube pública u obtener las ventajas que esta ofrece.
+                                         * Ventajas que ofrece la nube: Las organizaciones pueden utilizar las aptitudes y la experiencia del proveedor de nube para asegurarse de que 
+                                                                        las cargas de trabajo se configuren de forma que sean seguras y tengan alta disponibilidad.
+                                         * Productividad: Los usuarios se pueden centrar únicamente en el desarrollo de aplicaciones, ya que el proveedor de nube lleva a cabo toda la administración de plataformas.
+
+                                        DESVENTAJAS:
+                                         * Limitaciones de la plataforma. Es posible que en las plataformas en la nube haya una serie de limitaciones que pueden afectar al modo en el que una aplicación se ejecuta 
+                                                              
+
+
+- PaaS (Plataforma como servicio): Este modelo de servicio en la nube es un entorno de hospedaje administrado. 
+                                   El proveedor de servicios en la nube administra las máquinas virtuales y los recursos de red, 
+                                   y el inquilino de nube implementa sus aplicaciones en el entorno de hospedaje administrado.
+                                   Es un entorno donde no tienes que preocuparte por los requisitos de hardware y software fisicos
+
+                                   PaaS proporciona las mismas ventajas y consideraciones que IaaS, pero ofrece algunas ventajas adicionales
+
+                                   VENTAJAS:
+                                    * Sin gastos de capital (CapEx). Los usuarios no tienen costos iniciales.
+                                    * Agilidad. PaaS es más ágil que IaaS, y no es necesario que los usuarios configuren servidores para ejecutar aplicaciones.
+                                    * Modelo basado en el consumo. Los usuarios solo pagan por lo que usan y operan bajo un modelo OpEx.
+                                    * Aptitudes. No se requieren conocimientos técnicos avanzados para implementar y usar una plataforma PaaS u obtener las ventajas que esta ofrece.
+                                    * Ventajas que ofrece la nube. Los usuarios pueden aprovechar las aptitudes y la experiencia del proveedor de nube para asegurarse de que sus cargas de trabajo sean seguras y tengan alta disponibilidad.
+                                    * Productividad. Los usuarios se pueden centrar únicamente en el desarrollo de aplicaciones, ya que el proveedor de nube lleva a cabo toda la administración de plataformas
+
+                                   DESVENTAJAS:
+                                    * Limitaciones de la plataforma. Es posible que en las plataformas en la nube haya una serie de limitaciones que pueden afectar al modo en el que una aplicación se ejecuta  
+
+
+- SaaS (Software como servicio): En este modelo de servicio en la nube, el proveedor de servicios en la nube administra todos los aspectos del entorno de la aplicación, 
+                                 como las máquinas virtuales, los recursos de red, el almacenamiento de datos y las aplicaciones. El inquilino de nube solo necesita 
+                                 proporcionar sus datos a la aplicación administrada por el proveedor de servicios en la nube 
+
+                                 SaaS es software que se hospeda y administra de forma centralizada para usted y sus usuarios o clientes. 
+                                 Normalmente se usa una versión de la aplicación para todos los clientes y la licencia se obtiene mediante una suscripción mensual o anual.
+
+                                 VENTAJAS:
+                                  * Sin gastos de capital (CapEx). Los usuarios no tienen costos iniciales.
+                                  * Agilidad. Los usuarios pueden proporcionar al personal acceso al software más reciente de forma fácil y rápida.
+                                  * Modelo de precio de pago por uso. Los usuarios pagan por el software que usan mediante un modelo de suscripción, que habitualmente es mensual o anual, independientemente de cuánto usen el software.
+                                  * Aptitudes. No se requieren conocimientos técnicos avanzados para implementar y usar software SaaS u obtener las ventajas que este ofrece.
+                                  * Flexibilidad. Los usuarios pueden acceder a los mismos datos de la aplicación desde cualquier lugar.  
+
+                                 DESVENTAJAS:
+                                  * Limitaciones de software. Es posible que en las aplicaciones de software haya una serie de limitaciones que pueden afectar al modo en el que los usuarios trabajan.         
+
+ Comparaciones de servicio en la nube
+
+ IaaS
+ * El servicio en la nube más flexible.
+ * Configure y administre el hardware de la aplicación.
+
+ PaaS
+ * Céntrese en el desarrollo de aplicaciones.
+ * El proveedor de nube controla la administración de la plataforma
+
+ SaaS
+ * Modelo de precio de pago por uso.
+ * Los usuarios pagan por el software que utilizan en un modelo de suscripción.
+
+¿Informatica sin servidor?
+
+ la informática sin servidor permite que los desarrolladores creen aplicaciones más rápidamente, ya que elimina la necesidad de administrar la infraestructura. En las aplicaciones sin servidor, 
+ el proveedor de servicios en la nube aprovisiona, escala y administra automáticamente la infraestructura necesaria para ejecutar el código
+
+ El término "sin servidor" procede del hecho de que las tareas asociadas a la administración y el aprovisionamiento de la infraestructura son invisibles para el desarrollador.
