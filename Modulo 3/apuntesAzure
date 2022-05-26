@@ -1,0 +1,117 @@
+Componentes principales de azure
+
+La estructura organizativa de azure consta de 4 niveles,
+Jerarquicamente se encuentran de la siguiente manera
+
+- Grupo de administración: Estos ayudan a administrar accesos, directivas y el cumplimiento de varias suscripciones
+- Suscripciones: Una suscripcion agrupa las cuentas de usuario y los recursos que han creado esa cuenta de usuario
+- Grupo de recursos: Los recursos se combinan en grupo de recursos, que actúan como contenedor lógico en el que implementan
+                     y administran los recursos de azure como apps web, BD, etc.
+- Recursos: Los recurosos son instancias de servicios que puede crear, como MV, BD, etc.
+
+Zonas de disponibilidad , pares de regiones y regiones de azure
+
+Azure tiene centros de datos en todo el mundo lo cual hace que su servicio sea mas eficiente ya que de manera inteligente reparte
+los recursos a cada centro de datos de diferentes regiones donde la informacion pueda ser tratada de la mejor manera dependiendo del
+servicio que contrates o recurso que desees.
+
+Algo importante a tomar en cuenta es que solo algunos servicios o caracteristicas estan disponibles en ciertas regiones.
+
+Azure tiene regiones especializadas que se pueden usar al crear las aplicaciones, un ejemplo podrian ser las regiones de:
+- US DoD (centro), US Gov Virginia, US Gov Lowa, etc. : Estas regiones son instancias fisicas y logicas con aislamineto de red de 
+                                                        azure para asociados y agencias
+
+- Este de china, norte de china y más: Estas regiones están disponibles gracias a una asociación exclusiva entre Microsoft y 21Vianet,
+                                       por lo cual Microsoft no mantiene directamente los centros de datos
+
+Las regiones se utilizan para identificar la ubicación de los recursos 
+
+Zonas de disponibilidad de azure
+
+A fin de proteger la información en caso de error, deberá asegurarse de que los servicios y datos son redundantes, Azure puede ayudar a que la 
+aplicacion tenga alta disponibilidad a través de zonas de disponibilidad
+
+¿Que es una zona de disponibilidad?
+Son centros de datos separados fisicamente dentro de una región de azure. Una zona de disponibilidad se configura para construir un limite de aislamiento
+si una zona deja de funcionar, la otra continua trabajando, estas zonas están conectadas a través de redes de fibra óptica de alta velocidad privadas
+
+Regiones admitidas
+No todas las regiones son compatibles con las zonas de disponibilidad
+
+Uso de las zonas de disponibilidad en sus aplicaciones
+Las zonas de disponibilidad son principalmente para las maquinas virtuales, los discos administrados, los equilibradores de carga y las BD,
+las siguientes categorías de servicios de azure admiten zonas de disponibilidad:
+- Servicios de zona: ancle el recurso a una zona específica (por ejemplo, máquinas virtuales, discos administrados, direcciones IP)
+- Servicios de redundancia de zona: la plataforma se replica automáticamente entre zonas (por ejemplo, almacenamiento con redundancia de zona, SQL Database).
+- Servicios no regionales: los servicios siempre están disponibles en regiones geográficas de Azure y son resistentes a las interrupciones de toda la zona, así como a las de toda la región.
+
+Pares de regiones de azure
+Las zonas de disponibilidad se crean usando uno o varios centros de datos. Hay un mínimo de tres zonas en una sola región. Es posible que un desastre grande pueda provocar una interrupción 
+tan grave como para afectar incluso a dos centros de datos. Por eso Azure también crea pares de regiones.
+
+¿Qué es un par de regiones?
+Cada región de Azure se empareja siempre con otra región de la misma zona geográfica (por ejemplo, EE. UU., Europa o Asia) que se encuentre como mínimo a 500 km de distancia.
+Este enfoque permite la replicación de recursos, como el almacenamiento en la máquina virtual, en una zona geográfica, lo que ayuda a reducir la probabilidad de que se produzcan 
+interrupciones provocadas por eventos como desastres naturales, disturbios civiles, cortes del suministro eléctrico o interrupciones de la red física que afecten de forma simultánea a ambas regiones
+Si una región de un par se ve afectada por un desastre natural, por ejemplo, los servicios conmutarán por error automáticamente a la otra región de su par de regiones.
+
+Algunos pares de regiones de ejemplo en Azure son Oeste de EE. UU. y Este de EE. UU., o Sudeste Asiático y Asia Pacífico.
+
+Recursos de azure y azure resource manager
+- Recurso: elemento administrable que está disponible mediante Azure. Algunos ejemplos de recursos son las máquinas virtuales (VM).
+- Grupo de recursos: contenedor que incluye los recursos relacionados para una solución de Azure. El grupo de recursos incluye 
+                     los recursos que se quieren administrar como grupo.
+
+Agrupación lógica
+Los grupos de recursos existen para ayudar a administrar y organizar los recursos de Azure
+
+Ciclo de vida
+Si elimina un grupo de recursos, también se eliminarán todos los recursos que contenga. La organización de los recursos por ciclo de vida puede ser útil en entornos que no sean de producción
+
+Autorizacíon
+Los grupos de recursos también son un ámbito para aplicar permisos de control de acceso basado en roles (RBAC). Al aplicar permisos RBAC a un grupo de recursos, 
+puede facilitar la administración y limitar el acceso para permitir solo lo que sea necesario.
+
+Azure Resource Manager
+Es el servicio de implementación y administración para Azure. Proporciona una capa de administración que le permite crear, actualizar y eliminar recursos de la cuenta de Azure.
+es algo similiar a un api manger como gravitee
+
+    VENTAJAS:
+     * Administrar la infraestructura mediante plantillas declarativas en lugar de scripts. Una plantilla de Resource Manager es un archivo JSON que define lo que quiere implementar en Azure.
+     * implementar, administrar y supervisar todos los recursos de la solución en grupo, en lugar de controlarlos individualmente.
+     * Aplique control de acceso a todos los servicios, puesto que RBAC se integra de forma nativa en la plataforma de administración.
+     * Comprenda la facturación de la organización viendo los costos de un grupo de recursos que comparten la misma etiqueta.
+
+Suscripciones y grupos de administración de azure
+Una suscripción le proporciona acceso autenticado y autorizado a los servicios y productos de Azure. Además, también le permite aprovisionar los recursos.
+Una suscripción de Azure es una unidad lógica de servicios de Azure que está vinculada a una cuenta de Azure, que es una identidad en Azure Active Directory (Azure AD) o en un directorio en el que confía Azure AD.
+
+Una cuenta puede tener una suscripción o varias suscripciones que con distintos modelos de facturación y a las que se aplican diferentes directivas de administración de acceso.
+Hay dos tipos de límites de suscripción que puede utilizar:
+
+- Limite de facturación: determina cómo se factura una cuenta de Azure por el uso de Azure. Puede crear varias suscripciones para diferentes tipos de requisitos de facturación.
+- Limite de control de acceso: Azure aplica las directivas de administración de acceso en el nivel de suscripción, por lo que puede crear suscripciones independientes para reflejar distintas estructuras organizativas.
+
+Se pueden crear diferentes suscripciones adicionales para poder separa mejor a la organización, se pueden dividir en lo siguiente:
+ - Entorno: cuando administra sus recursos, puede optar por crear suscripciones con el fin de configurar entornos independientes para el desarrollo y las pruebas, para seguridad o para aislar los datos por motivos de cumplimiento.
+ - Estructuras organizativas:  puede crear suscripciones para reflejar las distintas estructuras organizativas. Por ejemplo, podría limitar un equipo a recursos de bajo costo, al tiempo que permite que el departamento de TI tenga un alcance completo.
+ - Facturación: es posible que también quiera crear suscripciones adicionales para fines de facturación. Dado que los costos se agregan primero en el nivel de suscripción, es posible que quiera crear suscripciones para administrar y 
+                realizar un seguimiento de los costos en función de sus necesidades.
+
+
+Es posible que tambien se puedan crear mas suscripcion debido al limite que algunos servicio de azure coloca
+Azure proporciona la personalizacion de facturacion lo que te permite organizar las facturas si tienes varias suscripciones asi como dividirlas
+
+Grupos de administración de azure
+Si se tienen muchas suscripciones se puede crear un grupo donde las suscripciones se organizan por contenedores llamado grupo des de administracion
+y las condiciones de gobernanza se aplican a los grupos de administración.  Todas las suscripciones dentro de un grupo de administración heredan automáticamente las condiciones que se aplican al grupo de administración.
+
+Los grupos de administración tambien te pueden ayudar para jerarquizar las suscripciones y de esta manera se logra una administracion unificada
+
+Hechos importantes acerca de los grupos de administración
+
+- Se admiten 10 000 grupos de administración en un único directorio.
+- Un árbol de grupo de administración puede admitir hasta seis niveles de profundidad. Este límite no incluye el nivel raíz ni el nivel de suscripción.
+- Cada grupo de administración y suscripción solo puede admitir un elemento primario.
+- Cada grupo de administración puede tener muchos elementos secundarios.
+- Todas las suscripciones y grupos de administración están dentro de una única jerarquía en cada directorio.
